@@ -1,0 +1,855 @@
+﻿$header-color: #0b0a32
+$yellow-color: #fcff00
+$blue-color: #1ab5e6
+$light-color: #fff
+$dark-color: #4e4e4e
+$text-button: #000
+
+$bg-light: #f7f7f7
+
+$small-text: 13px
+$text-title: 32px
+$big-text: 47px
+$middle-text: 19px
+
+#modal_close
+	width: 21px
+	height: 21px
+	position: absolute
+	top: 10px
+	right: 30px
+	cursor: pointer
+	display: block
+	color: #413d4b
+	font-size: 40px
+
+.mymagicoverbox
+	padding: 0 10px 10px 0
+	margin: 0 10px 10px 40px
+
+.mymagicoverbox_fenetre
+	width: 960px
+	left: -500px
+	z-index: 9999
+	position: fixed
+	margin-left: 50%
+	top: 20px
+	text-align: center
+	display: none
+	background-color: #ffffff
+	p
+		width: 400px
+		padding-top: 70px
+		margin: 0 auto
+		font-family: "OpenSans-Bold", sans-serif
+		font-size: 22px
+		text-transform: uppercase
+		color: #413d4b
+
+.mymagicoverbox_fenetreinterieur
+	height: 500px
+	text-align: center
+	overflow: auto
+	padding: 10px
+	background-color: #ffffff
+	margin-top: 10px
+
+#myfond_gris
+	display: none
+	background-color: #000000
+	opacity: 0.7
+	width: 100%
+	height: 100%
+	z-index: 9998
+	position: fixed
+	top: 0
+	bottom: 0
+	right: 0
+	left: 0
+
+html
+	overflow-x: hidden
+
+body
+	font-family: "OpenSans", sans-serif
+	font-weight: normal
+	font-size: 14px
+	line-height: 1.6
+	margin: 0
+	padding: 0
+
+section
+	display: block
+	padding: 50px 0
+
+h2
+	display: block
+	text-align: center
+	padding: 0
+	padding-bottom: 30px
+	font-size: $text-title
+	font-family: "OpenSans-Bold", sans-serif
+	color: $dark-color
+	line-height: 1.2
+	margin: 0
+a
+	cursor: pointer
+
+h1
+	text-transform: uppercase
+	font-size: $big-text
+	font-family: "OpenSans-Bold", sans-serif
+
+.bg_gray
+	background: $bg_light
+	position: relative
+	z-index: 2
+.bg_light
+	background: #fff
+.bg_dark
+	background: #020725
+
+.bg_header-color
+	background: #0b0a32
+
+.main-head
+	min-height: 100px
+	min-width: 1140px
+	background: #0b0a32
+	position: absolute
+
+.logo
+	background: url(../img/logo.png)
+	display: block
+	width: 210px
+	height: 81px
+	margin-top: 10px
+
+header
+	position: absolute
+	z-index: 10
+.nav
+	float: right
+	text-align: center
+	li
+		display: inline-block
+		padding: 0 7px 10px 7px
+		line-height: 97px
+		border: transparent
+		&:hover
+			border-bottom: 2px solid #29abe2
+		a
+			color: #b8b8b8
+			font-size: 13px
+			padding: 10px 0s
+			text-transform: uppercase
+			&:hover
+				color: #29abe2
+
+.nav__button, .nav__button_inversion, .entry__form_enroll input[type="submit"], .entry__form_enroll_blue input[type="submit"], .entry__form_enroll .enroll textarea[type="submit"], .enroll .entry__form_enroll textarea[type="submit"], .entry__form_enroll_blue .enroll textarea[type="submit"], .enroll .entry__form_enroll_blue textarea[type="submit"], .entry__form_enroll .mymagicoverbox_fenetreinterieur textarea[type="submit"], .mymagicoverbox_fenetreinterieur .entry__form_enroll textarea[type="submit"], .entry__form_enroll_blue .mymagicoverbox_fenetreinterieur textarea[type="submit"], .mymagicoverbox_fenetreinterieur .entry__form_enroll_blue textarea[type="submit"], .cost_btn
+	float: right
+	margin-top: 25px
+	padding: 15px 10px
+	background: #29abe2
+	color: #fff
+	font-size: 12px
+	text-transform: uppercase
+	border-radius: 5px
+	font-family: "OpenSans-Bold", sans-serif
+
+.nav__button:hover, .nav__button_inversion:hover, .entry__form_enroll input[type="submit"]:hover, .entry__form_enroll_blue input[type="submit"]:hover, .entry__form_enroll .enroll textarea[type="submit"]:hover, .enroll .entry__form_enroll textarea[type="submit"]:hover, .entry__form_enroll_blue .enroll textarea[type="submit"]:hover, .enroll .entry__form_enroll_blue textarea[type="submit"]:hover, .entry__form_enroll .mymagicoverbox_fenetreinterieur textarea[type="submit"]:hover, .mymagicoverbox_fenetreinterieur .entry__form_enroll textarea[type="submit"]:hover, .entry__form_enroll_blue .mymagicoverbox_fenetreinterieur textarea[type="submit"]:hover, .mymagicoverbox_fenetreinterieur .entry__form_enroll_blue textarea[type="submit"]:hover, .cost_btn:hover
+	background: #2499cb
+
+.nav__button_inversion, .entry__form_enroll input[type="submit"], .entry__form_enroll_blue input[type="submit"], .entry__form_enroll .enroll textarea[type="submit"], .enroll .entry__form_enroll textarea[type="submit"], .entry__form_enroll_blue .enroll textarea[type="submit"], .enroll .entry__form_enroll_blue textarea[type="submit"], .entry__form_enroll .mymagicoverbox_fenetreinterieur textarea[type="submit"], .mymagicoverbox_fenetreinterieur .entry__form_enroll textarea[type="submit"], .entry__form_enroll_blue .mymagicoverbox_fenetreinterieur textarea[type="submit"], .mymagicoverbox_fenetreinterieur .entry__form_enroll_blue textarea[type="submit"]
+	float: none
+	background: $yellow-color
+	color: #000
+	font-size: 18px
+	padding: 15px 45px
+	font-family: "OpenSans-Bold", sans-serif
+	margin: 0
+
+.nav__button_inversion:hover, .entry__form_enroll input[type="submit"]:hover, .entry__form_enroll_blue input[type="submit"]:hover, .entry__form_enroll .enroll textarea[type="submit"]:hover, .enroll .entry__form_enroll textarea[type="submit"]:hover, .entry__form_enroll_blue .enroll textarea[type="submit"]:hover, .enroll .entry__form_enroll_blue textarea[type="submit"]:hover, .entry__form_enroll .mymagicoverbox_fenetreinterieur textarea[type="submit"]:hover, .mymagicoverbox_fenetreinterieur .entry__form_enroll textarea[type="submit"]:hover, .entry__form_enroll_blue .mymagicoverbox_fenetreinterieur textarea[type="submit"]:hover, .mymagicoverbox_fenetreinterieur .entry__form_enroll_blue textarea[type="submit"]:hover
+	background: $yellow-color * 0.9
+	color: #000
+
+.default
+	width: 100%
+	background: transparent
+
+.fixed
+	width: 100%
+	position: fixed
+	z-index: 1000
+	background: #0b0a32
+	opacity: 0.9
+
+.block__main
+	background: url(../img/bg-header-advertis.jpg) center center
+	background-size: cover
+	min-height: 850px
+	margin-bottom: 50px
+
+.block__main_text
+	height: auto
+	color: #fff
+	text-align: center
+	padding-top: 20px
+	font-size: 34px
+
+.block_slider
+	padding-bottom: 40px
+
+.block_slider_text
+	height: auto
+	color: #fff
+	text-align: left
+	h1
+		margin-top: 140px
+		line-height: 1.3
+	span
+		display: block
+		padding: 30px 0 65px 0
+		font-size: 34px
+		color: #d4d4d4
+		line-height: 1.2
+	p
+		padding-top: 25px
+		color: #d4d4d4
+		font-size: 16px
+
+.what_is_advertis
+	h2
+		text-align: left
+		padding-top: 70px
+		padding-bottom: 25px
+	p
+		font-size: 22px
+		color: $dark-color
+		line-height: 1.2
+.who__fit
+	padding-top: 60px
+	h2
+		text-align: center
+		padding-bottom: 35px
+
+	&_users
+		text-align: center
+		span
+			display: block
+			padding-top: 30px
+			color: #1ab5e6
+			font-family: "OpenSans-Bold", sans-serif
+			font-size: $middle-text
+		p
+			text-align: center
+			padding-top: 15px
+			color: $dark-color
+			font-size: 15px
+			line-height: 1.2
+
+.entry__form
+	h3
+		font-family: "OpenSans-Bold", sans-serif
+		font-size: 27px
+		color: #4a4a4a
+		text-align: center
+		line-height: 1.2
+	p
+		font-size: 20px
+		color: #4a4a4a
+		text-align: center
+		padding-top: 25px
+		line-height: 1.4
+
+.entry__form_enroll, .entry__form_enroll_blue
+	text-align: center
+	padding-bottom: 20px
+
+.entry__form_enroll input, .entry__form_enroll_blue input, .entry__form_enroll .enroll textarea, .enroll .entry__form_enroll textarea, .entry__form_enroll_blue .enroll textarea, .enroll .entry__form_enroll_blue textarea, .entry__form_enroll .mymagicoverbox_fenetreinterieur textarea, .mymagicoverbox_fenetreinterieur .entry__form_enroll textarea, .entry__form_enroll_blue .mymagicoverbox_fenetreinterieur textarea, .mymagicoverbox_fenetreinterieur .entry__form_enroll_blue textarea
+	color: $dark-color
+	background: #eeeeee
+	border: 1px solid #acacac
+	border-radius: 5px
+	padding: 15px 10px
+	margin-right: 20px
+
+.entry__form_enroll input[type="submit"], .entry__form_enroll_blue input[type="submit"], .entry__form_enroll .enroll textarea[type="submit"], .enroll .entry__form_enroll textarea[type="submit"], .entry__form_enroll_blue .enroll textarea[type="submit"], .enroll .entry__form_enroll_blue textarea[type="submit"], .entry__form_enroll .mymagicoverbox_fenetreinterieur textarea[type="submit"], .mymagicoverbox_fenetreinterieur .entry__form_enroll textarea[type="submit"], .entry__form_enroll_blue .mymagicoverbox_fenetreinterieur textarea[type="submit"], .mymagicoverbox_fenetreinterieur .entry__form_enroll_blue textarea[type="submit"]
+	margin: 0
+	border: none
+
+.advertis_info
+	// background: url(../img/bg_info_advertis.jpg) top center
+	// background-size: cover
+	// min-height: 500px
+	h2
+		color: $blue-color
+		text-align: center
+	h5
+		font-family: "OpenSans-Bold", sans-serif
+		color: $blue-color
+		font-size: $middle-text
+		line-height: 1.2
+		text-transform: uppercase
+		padding-bottom: 35px
+	p
+		color: #fff
+		font-size: 18px
+		line-height: 1.4
+
+.analitics
+	text-align: center
+	p
+		font-size: 25px
+		color: $dark-color
+		line-height: 1.2
+		padding-top: 10px
+		padding-bottom: 15px
+	span
+		font-family: "OpenSans-Bold", sans-serif
+		font-size: 25px
+		color: $blue-color
+		line-height: 1.2
+.progress_bar
+	text-align: center
+
+.results
+	position: relative
+	h2
+		color: $blue-color
+		text-align: left
+		font-size: 36px
+	&_info
+		padding-bottom: 30px
+		img
+			height: 22px
+			width: 26px
+			display: block
+			float: left
+			margin: 10px 15px 0 0
+		p
+			display: block
+			font-size: 17px
+			line-height: 1.2
+			color: #fff
+	&_button
+		padding-top: 40px
+	&_img
+		text-align: right
+		img
+			position: absolute
+			right: 0
+			top: 90px
+			z-index: 1
+
+.why_Gagarin
+	&_img
+		text-align: center
+		padding-top: 20px
+		img
+			padding-top: 5px
+			width: 242px
+			height: 237px
+	&_text
+		p
+			color: $dark-color
+			padding-bottom: 5px
+			font-style: 16px
+		h2
+			text-align: left
+
+.dark_blue
+	background: #0b0a32
+	min-height: 70px
+	border-top: 7px solid #29abe2
+	border-bottom: 7px solid #29abe2
+	display: block
+	text-align: center
+	padding-top: 50px
+	p
+		font-size: 20px
+		color: #29abe2
+		padding-bottom: 50px
+
+.light_blue
+	background: #29abe2
+	min-height: 70px
+	border-top: 7px solid #0b0a32
+	border-bottom: 7px solid #29abe2
+	display: block
+	text-align: center
+	padding-top: 50px
+	p
+		color: #4a4a4a
+.statistic
+	img
+		width: 111px
+		height: 111px
+	h3
+		color: #fff
+		font-size: 34px
+		padding-top: 30px
+	p
+		font-size: 18px
+		font-family: "OpanSans-Light", sans-serif
+		padding-bottom: 50px
+
+.bg_audit
+	background: url(../img/bg_audit.jpg) no-repeat top center
+	background-size: cover
+	min-height: 400px
+	h1
+		color: #fff
+		font-size: 41px
+		text-align: center
+		padding: 60px 0
+		line-height: 1.2
+	.entry__form
+		input
+			border: 1px solid #2b698b
+			background: #010029
+			color: #fff
+			&::placeholder
+				color: #fff
+			&[type="submit"]
+				border: transparent
+				background: $yellow-color
+				color: #010101
+				&:hover
+					background: $yellow-color * 0.9
+
+.present
+	&_img
+		width: 240px
+		height: 240px
+	h5
+		font-size: 16px
+		font-family: "OpenSans-Bold", sans-serif
+		margin-top: 20px 0 0 0
+		width: 210px
+		text-transform: uppercase
+		padding-left: 15px
+	p
+		font-size: 14px
+		padding-top: 20px
+		padding-left: 15px
+	&_button
+		padding-top: 50px
+		padding-bottom: 25px
+		text-align: center
+		a
+			padding: 20px 70px
+			font-size: $middle-text
+			font-family: "OpenSans-Bold", sans-serif
+
+.reviews
+	background: url(../img/bg_reviews.jpg) center center
+	background-size: cover
+	min-height: 700px
+	h2
+		color: #fff
+		padding-bottom: 0
+	h5
+		color: #29abe2
+		font-size: 70px
+		text-align: center
+	&_button
+		padding-bottom: 20px
+.reviews_info
+	p
+		color: #b8b8b8
+		text-align: center
+		font-size: 20px
+	.profession
+		font-size: 13px
+		padding-bottom: 25px
+	.name
+		padding-top: 40px
+		padding-bottom: 15px
+		color: #29abe2
+		font-family: "OpenSans-Bold", sans-serif
+
+.reviews_img
+	display: block
+	width: 150px
+	height: 150px
+	background: #293f60
+	border-radius: 50%
+	margin: 0 auto
+	padding-top: 7px
+
+.paginator__img
+	border-radius: 50%
+	width: 60px
+	height: 60px
+	border: 4px solid #293f60
+
+.paginator__img_big
+	border: 3px solid #29abe2
+	margin: 0 auto
+
+.reviews_slider-nav
+	width: 300px
+	height: 70px
+	margin: 0 auto
+	padding-top: 40px
+	margin-bottom: 40px
+
+.slick-current .paginator__img
+	width: 60px
+	height: 60px
+	margin-top: 0px
+
+.paginator__img_big
+	width: 135px
+	height: 135px
+	border-radius: 50%
+
+.reviews_text
+	background: #0b0a32
+	h2
+		color: #29abe2
+		font-size: 40px
+		padding: 0
+	p
+		color: #fff
+		text-align: center
+		&:last-child
+			padding-bottom: 30px
+
+.rewievs_btn
+	font-size: 13px
+	padding: 15px 25px
+
+
+// drop-down-list
+.list
+.list > li
+	position: relative
+	margin-bottom: 20px
+	border-radius: 10px
+	&:hover
+		cursor: pointer
+	p
+		box-shadow: 0 2px 10px 2px rgba(200,200,200,1)
+		height: 100px
+		font-family: "OpenSans-Bold", sans-serif
+		font-size: 30px
+		color: $dark-color
+		background: #fff
+		padding: 15px 150px
+		border-radius: 10px
+		line-height: 1.2
+		&:before
+			content: attr(title) ' занятие'
+			color: #fff
+			text-transform: uppercase
+			font-family: "OpenSans-Bold", sans-serif
+			font-size: 20px
+			display: block
+			width: 100px
+			height: 100px
+			background: #29abe2
+			float: left
+			position: absolute
+			left: 0
+			top: 0
+			padding: 30px 0
+			border-radius: 10px 0 0 10px
+			text-align: center
+		&:after
+			content: url(../img/arrow-down.png)
+			position: absolute
+			right: 50px
+			top: 40px
+
+.list > li > ol 
+	display: none
+
+.list
+	ol
+		padding-left: 150px
+		background: #fff
+		margin: 0 10px
+		box-shadow: 0 5px 10px 2px rgba(200,200,200,1)
+		li
+			font-family: "OpenSans-Bold", sans-serif
+			font-size: 18px
+			color: $dark-color
+			padding: 5px 0
+
+.s__garranty
+	&_img
+		text-align: left
+	&_info
+		h2
+			text-align: left
+			font-family: "OpenSans-Bold", sans-serif
+			font-size: 29px
+			color: $blue-color
+			text-transform: uppercase
+			padding-bottom: 20px
+			margin: 0
+		p
+			color: #fff
+			font-size: $middle-text
+			line-height: 1.4
+		span
+			font-family: "OpenSans-Bold", sans-serif
+			font-size: 22px
+
+.s__teacher
+	h2
+		margin: 0
+	&_img
+		text-align: center
+		img
+			height: 217px
+			width: 217px
+			border-radius: 50%
+			margin-bottom: 30px
+	&_info
+		text-align: center
+		h2
+			font-size: 30px
+			padding-bottom: 30px
+		p
+			line-height: 1.2
+			font-size: 18px
+
+.bg_cost	
+	background: url(../img/bg_cost.jpg) no-repeat top center
+	background-size: cover
+	min-height: 1100px
+.s__cost
+	opacity: .99
+	h2
+		font-family: "OpenSans-Bold", sans-serif
+		color: #fff
+	.light_color
+		background: #29abe2
+		height: 15px
+		border-radius: 10px 0 0 0
+	.light_color_right
+		background: #29abe2
+		height: 15px
+		border-radius: 0 10px 0 0
+	.dark_color
+		background: #2d7fa2
+		height: 15px
+		position: relative
+		&:after
+			content: 'Рекомендуем'
+			background: #56bf61
+			font-family: "OpenSans-Bold", sans-serif
+			font-size: 15px
+			text-transform: uppercase
+			color: #fff
+			padding: 4px 5px 
+			position: absolute
+			bottom: -8px
+			left: 127px
+		&:before
+			content: url(../img/recomended_cost.png)
+			position: absolute
+			bottom: 8px
+			left: 117px
+	&_rate
+		h2
+			font-family: "OpenSans-Light", sans-serif
+			font-weight: normal
+			color: #2d7fa2
+			padding: 0
+			margin: 0
+			padding-top: 30px
+		h3
+			font-family: "OpenSans-Bold", sans-serif
+			color: #aeaeae
+			font-size: 25px
+			text-align: center
+			padding-top: 10px
+		p
+			font-size: 16px
+			color: $dark-color
+			text-align: center
+			padding: 10px 50px
+			line-height: 1.2
+		span
+			font-family: "OpenSans-Bold", sans-serif
+			font-size: 16px
+			color: #2d7fa2
+		h4
+			font-family: "OpenSans-Light", sans-serif
+			font-weight: normal
+			font-size: 36px
+			color: #2d7fa2
+			font-weight: 600
+			text-align: center
+			padding: 0
+			margin: 0
+		h5
+			font-size: 15px
+			color: #969696
+			font-weight: 600
+			text-align: center
+			padding: 0
+			margin: 0
+
+.base
+	background: #fff
+	position: relative
+	top: 0
+	padding: 0
+	margin: 0
+	border-radius: 0 0 0 10px
+.optimal
+	background: #fff
+	position: relative
+	top: 0
+	padding: 0
+	margin: 0
+	z-index: -1
+	h2
+		font-family: "OpenSans", sans-serif
+	h4
+		font-family: "OpenSans", sans-serif
+.premium
+	background: #fff
+	position: relative
+	top: 0
+	padding: 0
+	margin: 0
+	border-radius: 0 0 10px 0
+	h2
+		font-family: "OpenSans-Bold", sans-serif
+	h4
+		padding-top: 19px
+		font-family: "OpenSans-Bold", sans-serif
+
+.button_cost
+	margin: 60px
+	text-align: center
+.button_blue_cost
+	background: #29abe2
+	font-weight: 800
+	font-size: 19px
+	color: #fff
+	padding: 20px 60px
+	border-radius: 5px
+	margin: 0
+	&:hover
+		background: #29abe2 * 0.9
+.button_green_cost
+	@extend .button_blue_cost
+	background: #29abe2
+	&:hover
+		background: #29abe2 * 0.9
+
+.s__cost_separator
+	text-align: center
+	padding: 18px
+.separator_right
+	border-right: 2px solid #cacaca
+
+// .shadow
+// 	margin-top: 100px
+// 	min-height: 945px
+// 	border-radius: 10px
+// 	box-shadow: 0 0 40px 0 #000000
+
+
+
+.contact_sprite
+	float: left
+	margin-right: 25px
+	.contact_img
+		float: left
+		margin-right: 25px
+	.contact_block
+		margin-bottom: 30px
+	.contact_img
+		width: 38px
+		height: 38px
+	p, .contact_img p
+		margin-top: 5px
+		font-size: 20px
+		font-family: "OpenSans-Bold", sans-serif
+		min-width: 260px
+	.phone
+		background: url(../img/contact_sprite.png)
+	.skype
+		background: url(../img/contact_sprite.png) 38px -67px
+	.email
+		background: url(../img/contact_sprite.png) 38px -131px
+	h5
+		font-weight: 800
+		font-size: $middle-text
+		color: $dark-color
+	h6
+		font-size: 16px
+		padding-bottom: 25px
+		color: $dark-color		
+
+.contact_form 
+	.enroll textarea
+		height: 255px
+	p
+		font-size: 16px
+		font-family: "OpenSans-Bold", sans-serif
+
+.enroll input, .mymagicoverbox_fenetreinterieur input, .enroll textarea, .mymagicoverbox_fenetreinterieur textarea
+	width: 550px
+	height: 50px
+	border: 1px solid #dee7e5
+	margin: 6px 0
+	padding-left: 20px
+
+.enroll textarea, .mymagicoverbox_fenetreinterieur textarea
+	height: 175px
+	resize: none
+	padding-top: 20px
+
+.form__button
+	text-transform: uppercase
+	font-family: "OpenSans-Bold", sans-serif
+	font-size: 14px
+	color: #fff
+	background: #29abe2
+	border-radius: 4px
+	box-shadow: 0 -5px #2597c7 inset
+	&:hover
+		background: #2499cb
+		box-shadow: 0 0px #1183b3 inset
+
+footer
+	background: #012a40
+	height: 110px
+	text-align: center
+	padding-top: 45px
+	font-size: 14px
+	color: #b8b8b8
+
+.error_404
+	background: url(../img/bg_404.jpg) center center
+	background-size: cover
+	min-height: 100%
+	img
+		display: block
+		height: 276
+		width: 251
+		margin: 0 auto
+
+.error_text
+	color: #fff
+	width: 550px
+	margin: 0 auto
+	text-align: center
+	line-height: 1.2
+	h1
+		font-size: 50px
+		font-family: "OpenSans-Bold", sans-serif
+		padding-top: 55px
+		text-transform: uppercase
+	p
+		font-size: 26px
+		padding-top: 20px
